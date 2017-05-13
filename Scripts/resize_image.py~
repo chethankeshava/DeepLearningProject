@@ -1,0 +1,5 @@
+from PIL import Image
+
+img = Image.open('PedestrianCrossing.15.png')
+img = img.resize((32,32), Image.ANTIALIAS)
+img.save('thumbnail.png')
